@@ -17,7 +17,7 @@ namespace MetroAppBar
 
         private void Application_Startup(object sender, StartupEventArgs e)
         {
-            Application.Current.Resources.Add("Hub", new TinyMessengerHub());
+            Application.Current.Resources.Add(ResourceKeys.Hub, new TinyMessengerHub());
             this.RootVisual = new MainPage();
         }
 
